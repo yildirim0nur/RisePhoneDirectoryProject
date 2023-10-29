@@ -29,6 +29,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Contacts.Api\Contacts.Api.csproj" />
     <ProjectReference Include="..\Contacts.Connection\Contacts.Connection.csproj" />
   </ItemGroup>
 

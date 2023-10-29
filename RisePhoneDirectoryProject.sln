@@ -7,25 +7,27 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Contacts", "Contacts", "{9E
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Reports", "Reports", "{76D1CA35-8FC9-45B1-B3F0-FDD956EE6195}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contacts.Application", "Contacts.Application\Contacts.Application.csproj", "{95E6921B-E4DA-4476-88EA-54C1D720058F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contacts.Application", "Contacts.Application\Contacts.Application.csproj", "{95E6921B-E4DA-4476-88EA-54C1D720058F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contacts.Domain", "Contacts.Domain\Contacts.Domain.csproj", "{18731102-5008-4547-BA66-B60E899F9DC1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contacts.Domain", "Contacts.Domain\Contacts.Domain.csproj", "{18731102-5008-4547-BA66-B60E899F9DC1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contacts.Connection", "Contacts.Connection\Contacts.Connection.csproj", "{2896CF02-5847-4D7B-8BB6-69064C2967FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contacts.Connection", "Contacts.Connection\Contacts.Connection.csproj", "{2896CF02-5847-4D7B-8BB6-69064C2967FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contacts.Tests", "Contacts.Tests\Contacts.Tests.csproj", "{9FDE027D-4993-4AFC-AC6C-DAB5E0901016}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contacts.Tests", "Contacts.Tests\Contacts.Tests.csproj", "{9FDE027D-4993-4AFC-AC6C-DAB5E0901016}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reports.Application", "Reports.Application\Reports.Application.csproj", "{7D969895-2AF4-436C-B0A5-416ADF6375AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reports.Application", "Reports.Application\Reports.Application.csproj", "{7D969895-2AF4-436C-B0A5-416ADF6375AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reports.Connection", "Reports.Connection\Reports.Connection.csproj", "{ED1FFAE6-359E-45F3-8F1D-32443EEAD593}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reports.Connection", "Reports.Connection\Reports.Connection.csproj", "{ED1FFAE6-359E-45F3-8F1D-32443EEAD593}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reports.Domain", "Reports.Domain\Reports.Domain.csproj", "{707DA7E1-D4E7-42AE-82BC-D0001DC95DF0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reports.Domain", "Reports.Domain\Reports.Domain.csproj", "{707DA7E1-D4E7-42AE-82BC-D0001DC95DF0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{12704492-594F-4B6D-B454-EEC9DF347CCD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{49181B0B-678A-4872-B425-68009A9A69D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared", "Shared\Shared.csproj", "{49181B0B-678A-4872-B425-68009A9A69D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contacts.Api", "Contacts.Api\Contacts.Api.csproj", "{CF0A3DAE-0D93-4F86-9678-63FF6AFC30A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contacts.Api", "Contacts.Api\Contacts.Api.csproj", "{CF0A3DAE-0D93-4F86-9678-63FF6AFC30A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reports.Api", "Reports.Api\Reports.Api.csproj", "{4B0A6520-566E-4201-AE85-7C77C8DF379F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{CF0A3DAE-0D93-4F86-9678-63FF6AFC30A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF0A3DAE-0D93-4F86-9678-63FF6AFC30A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF0A3DAE-0D93-4F86-9678-63FF6AFC30A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B0A6520-566E-4201-AE85-7C77C8DF379F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B0A6520-566E-4201-AE85-7C77C8DF379F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B0A6520-566E-4201-AE85-7C77C8DF379F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B0A6520-566E-4201-AE85-7C77C8DF379F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -83,6 +89,7 @@ Global
 		{707DA7E1-D4E7-42AE-82BC-D0001DC95DF0} = {76D1CA35-8FC9-45B1-B3F0-FDD956EE6195}
 		{49181B0B-678A-4872-B425-68009A9A69D1} = {12704492-594F-4B6D-B454-EEC9DF347CCD}
 		{CF0A3DAE-0D93-4F86-9678-63FF6AFC30A1} = {9EA896FE-36A2-4468-B69C-08C763789092}
+		{4B0A6520-566E-4201-AE85-7C77C8DF379F} = {76D1CA35-8FC9-45B1-B3F0-FDD956EE6195}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3AF2AD6D-9743-4101-B26F-BCEAE3AABCC3}

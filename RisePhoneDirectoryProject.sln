@@ -25,6 +25,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{127044
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{49181B0B-678A-4872-B425-68009A9A69D1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contacts.Api", "Contacts.Api\Contacts.Api.csproj", "{CF0A3DAE-0D93-4F86-9678-63FF6AFC30A1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{49181B0B-678A-4872-B425-68009A9A69D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49181B0B-678A-4872-B425-68009A9A69D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49181B0B-678A-4872-B425-68009A9A69D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF0A3DAE-0D93-4F86-9678-63FF6AFC30A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF0A3DAE-0D93-4F86-9678-63FF6AFC30A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF0A3DAE-0D93-4F86-9678-63FF6AFC30A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF0A3DAE-0D93-4F86-9678-63FF6AFC30A1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -76,6 +82,7 @@ Global
 		{ED1FFAE6-359E-45F3-8F1D-32443EEAD593} = {76D1CA35-8FC9-45B1-B3F0-FDD956EE6195}
 		{707DA7E1-D4E7-42AE-82BC-D0001DC95DF0} = {76D1CA35-8FC9-45B1-B3F0-FDD956EE6195}
 		{49181B0B-678A-4872-B425-68009A9A69D1} = {12704492-594F-4B6D-B454-EEC9DF347CCD}
+		{CF0A3DAE-0D93-4F86-9678-63FF6AFC30A1} = {9EA896FE-36A2-4468-B69C-08C763789092}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3AF2AD6D-9743-4101-B26F-BCEAE3AABCC3}

@@ -1,7 +1,7 @@
 ﻿using Contacts.Persistence.Context;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Reports.Persistence.Context;
+//using Reports.Persistence.Context;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,12 +19,12 @@ namespace Contacts.Tests.Helpers
                 .Options;
         }
 
-        public static DbContextOptions<DbReportContext> GetReportContextForInMemoryDb()
-        {
-            return new DbContextOptionsBuilder<DbReportContext>()
-                .UseInMemoryDatabase(databaseName: "ReportTestDb")
-                .Options;
-        }
+        //public static DbContextOptions<DbReportContext> GetReportContextForInMemoryDb()
+        //{
+        //    return new DbContextOptionsBuilder<DbReportContext>()
+        //        .UseInMemoryDatabase(databaseName: "ReportTestDb")
+        //        .Options;
+        //}
         public static int? GetStatusCodeFromActionResult<T>(ActionResult<T> actionResult)
         {
             try

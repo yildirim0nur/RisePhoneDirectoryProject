@@ -13,6 +13,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xunit;
+using Microsoft.AspNetCore.Mvc;
 
 
 namespace Contacts.Tests.Controllers
@@ -157,6 +158,61 @@ namespace Contacts.Tests.Controllers
 
             var result = await controller.GetContactById(id);
             Assert.Equal(200, TestHelper.GetStatusCodeFromActionResult(result));
+        }
+        [Fact]
+        public async Task Remove_Contact_With_Valid_Params_Should_Return_200()
+        {
+            var id = Guid.NewGuid();
+            var mockPersonService = new Mock<IContactSvc>();
+            mockPersonService
+                .Setup(x => x.RemoveContactDetail(id))
+               .ReturnsAsync(() => new SingleDataResponse<Guid>(id));
+
+
+            var controller = new ContactController(mockPersonService.Object, Options.Create(new ContactSettings()));
+
+            var result = await controller.RemoveContactDetail(id);
+            Assert.Equal(200, TestHelper.GetStatusCodeFromActionResult(result));
+        }
+        [Fact]
+        public async Task Remove_Contact_With_InValid_Params_Should_Return_400()
+        {
+            var mockPersonService = new Mock<IContactSvc>();
+            mockPersonService
+                .Setup(x => x.RemoveContactDetail(Guid.Empty))
+               .ReturnsAsync(() => new SingleDataResponse<Guid>(Guid.Empty));
+
+
+            var controller = new ContactController(mockPersonService.Object, Options.Create(new ContactSettings()));
+
+            var result = await controller.RemoveContactDetail(Guid.Empty);
+            Assert.Equal(400, TestHelper.GetStatusCodeFromActionResult(result));
+        }
+        [Fact]
+        public async Task Get_Contact_Detail_By_Id_With_Valid_Params_Should_Return_200()
+        {
+            var id = Guid.NewGuid();
+            var mockPersonService = new Mock<IContactSvc>();
+            mockPersonService
+                  .Setup(x => x.GetContactDetailById(id))
+                  .ReturnsAsync(new SingleDataResponse<ContactDetailResDto>(new ContactDetailResDto()));
+            var controller = new ContactController(mockPersonService.Object, Options.Create(new ContactSettings()));
+
+            var result = await controller.ContactDetailById(id);
+            Assert.Equal(200, TestHelper.GetStatusCodeFromActionResult(result));
+        }
+        [Fact]
+        public async Task Get_Contact_Detail_By_Id_With_InValid_Params_Should_Return_200()
+        {
+            var id = Guid.NewGuid();
+            var mockPersonService = new Mock<IContactSvc>();
+            mockPersonService
+                  .Setup(x => x.GetContactDetailById(Guid.Empty))
+                  .ReturnsAsync(new SingleDataResponse<ContactDetailResDto>(new ContactDetailResDto()));
+            var controller = new ContactController(mockPersonService.Object, Options.Create(new ContactSettings()));
+
+            var result = await controller.ContactDetailById(Guid.Empty);
+            Assert.Equal(400, TestHelper.GetStatusCodeFromActionResult(result));
         }
     }
 }
